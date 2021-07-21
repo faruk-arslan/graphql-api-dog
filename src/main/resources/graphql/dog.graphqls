@@ -7,7 +7,7 @@ type Dog{
 
 type Query{
     findAllDogs: [Dog]!
-    fndDogById: Dog!
+    fndDogById(id: ID!): Dog!
 }
 
 type Mutation{
