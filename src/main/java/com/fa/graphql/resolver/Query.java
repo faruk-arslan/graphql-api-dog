@@ -6,10 +6,12 @@ import com.fa.graphql.exception.DogNotFoundException;
 import com.fa.graphql.repository.DogRepository;
 import net.bytebuddy.implementation.bytecode.Throw;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
 
+@Component
 public class Query implements GraphQLQueryResolver {
     private DogRepository dogRepository;
 
